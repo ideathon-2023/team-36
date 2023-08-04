@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>BOOKS WEBSITE</h1>
+        
+    </header>
+    <main>
+        <div class="genre-buttons">
+            <button onclick="showAll()">All</button>
+            <button onclick="filterByGenre('Comedy')">Comedy</button>
+            <button onclick="filterByGenre('Fiction')">Fiction</button>
+            <button onclick="filterByGenre('Mystery')">Mystery</button>
+            <button onclick="filterByGenre( 'Fantasy')">Fantasy</button>
+            <button onclick="filterByGenre( 'Romance')">Romance</button>
+            <button onclick="filterByGenre( 'Fanfiction')">Fanfiction</button>
+            <button onclick="filterByGenre( 'Manga')">Manga</button>
+            <button onclick="filterByGenre( 'LGBTQ')">LGBTQ</button>
+            <button onclick="filterByGenre( 'Adventure')">Adventure</button>
+            <button onclick="filterByGenre('Non-fiction')">Non-fiction</button>
+            <button onclick="filterByGenre( 'Classic')">Classic</button>
+            <button onclick="filterByGenre( 'Young Adult')">Young Adult</button>
+            <button onclick="filterByGenre( 'Music')">Music</button>
+            
+        </div>
+
+        <section class="webtoon-list">
+            <div class="book" data-genre="Romance">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1688011813i/27362503.jpg" alt=" Cover 1">
+                <h2>It Ends with Us</h2>
+                <p>Author: Colleen Hoover</p>
+                <p>Genre: Romance</p>
+            </div>
+
+            <div class="book" data-genre="Fantasy">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1170803558l/72193.jpg" alt="Cover 2">
+                <h2>Harry Potter and the Philosopher’s Stone</h2>
+                <p>Author: J.K. Rowling</p>
+                <p>Genre: Fantasy</p>
+            </div>
+
+            <div class="book" data-genre="Comedy">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1559986152l/386162.jpg" alt=" Cover 3">
+                <h2>The Hitchhiker's Guide to the Galaxy</h2>
+                <p>Author: Douglas Adams</p>
+                <p>Genre: Comedy</p>
+            </div>
+
+            <div class="book" data-genre="Fiction">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1674147285i/80830635.jpg" alt=" Cover 4">
+                <h2>Don't Let Her Stay</h2>
+                <p>Author: Nicola Sanders</p>
+                <p>Genre: Fiction</p>
+            </div>
+            
+            
+            <div class="book" data-genre="Non-fiction">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1560816565i/48855.jpg" alt="Webtoon Cover 6">
+                <h2>The Diary of a Young Girl</h2>
+                <p>Author: Anne Frank</p>
+                <p>Genre: Non-fiction</p>
+            </div>
+            
+            <div class="book" data-genre="Manga">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg" alt="Cover 7">
+                <h2>Naruto</h2>
+                <p>Author: Masashi Kishimoto</p>
+                <p>Genre: Manga</p>
+            </div>
+            
+            <div class="book" data-genre="Young Adult">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1586722975i/2767052.jpg" alt="Cover 8">
+                <h2>The Hunger Games</h2>
+                <p>Author: Suzanne Collins</p>
+                <p>Genre: Young Adult</p>
+            </div>
+            
+            <div class="book" data-genre="Adventure">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1647789287i/60177373.jpg" alt="Cover 9">
+                <h2>Fairy Tale</h2>
+                <p>Author: Stephen King</p>
+                <p>Genre: Adventure</p>
+            </div>
+
+            <div class="book" data-genre="Fanfiction">
+                <img src="data:image/jpeg;base64,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" alt="Cover 10">
+                <h2>After</h2>
+                <p>Author: Anna Todd</p>
+                <p>Genre: Fanfiction</p>
+            </div>
+
+            <div class="book" data-genre="Music">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1565190701l/50208350.jpg" alt="Cover 11">
+                <h2>The Happy Ever After Playlist</h2>
+                <p>Author: Abby Jimenez</p>
+                <p>Genre: Music</p>
+            </div>
+
+            <div class="book" data-genre="Classic">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1320399351i/1885.jpg" alt="Cover 12">
+                <h2>Pride and Prejudice</h2>
+                <p>Author: Jane Austen</p>
+                <p>Genre: Classic</p>
+            </div>
+
+            <div class="book" data-genre="Mystery">
+                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1632078539i/58679358._SY180_.jpg" alt="Cover 13">
+                <h2>One of Us Is Lying</h2>
+                <p>Author: Karen M. McManus</p>
+                <p>Genre: Mystery</p>
+            </div>
+
+            <div class="book" data-genre="LGBTQ">
+                <img src="https://upload.wikimedia.org/wikipedia/en/8/80/Red%2C_White_%26_Royal_Blue_Book_Cover.jpg" alt="Cover 14">
+                <h2>Red, White & Royal Blue</h2>
+                <p>Author: Casey McQuiston</p>
+                <p>Genre: LGBTQ</p>
+            </div>
+
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Books. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showAll() {
+            var book = document.querySelectorAll('.book');
+            book.forEach(function(book) {
+                book.style.display = 'inline-block';
+            });
+        }
+
+        function filterByGenre(genre) {
+            var books = document.querySelectorAll('.book');
+            books.forEach(function(book) {
+                if (book.dataset.genre === genre || genre === 'All') {
+                    book.style.display = 'inline-block';
+                } else {
+                    book.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
